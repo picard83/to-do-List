@@ -1,0 +1,128 @@
+//i want to know more about switch statements
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// // want to know more about splice / where to use it
+
+// let more = ["alpha", "gamma", "delta"];
+// // ["alpha", "beta", "gamma", "delta"]
+// more.splice(1, "beta", "beta");
+// console.log(more);
+
+// ///////////////////////////////////////////
+// // function excersise questions
+
+// // Create a variable called numbers which is an array that contains the numbers 1 through 10.
+
+// // [1,2,3,4,5,6,7,8,9,10]
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// // Write a function called displayOddNumbers which iterates over the numbers array and console.logs out all of the numbers that are odd.
+// function displayOddNumbers() {
+//   for (let num of numbers) {
+//     if (num % 2 != 0) {
+//       console.log(num);
+//     }
+//   }
+// }
+// //having trouble making a function that iterates over an array of numbers,trying to return only the odd numbers//
+
+// ///////////////////////////////////////////
+
+// // i got this one correct, i just wanted to ask how firsstName & LastName work when i didnt define them before?
+
+// function createStudent(first, last) {
+//   return {
+//     firstName: `${first}`,
+//     lastNAme: `${last}`,
+//   };
+// }
+// createStudent("chris", "picard");
+// console.log(createStudent("chris", "picard"));
+
+// /////////////////////////////////
+
+// //i dont understand how to use the forEach correctly here, i keep getting confused because of the extra parameters in the for each function, and dont fully understand how its working?
+// function findStudentByFirstName(str) {
+//   students.forEach(function (i, str) {
+//     if (str[i] === students.firstName) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   });
+// }
+// findStudentByFirstName("elie");
+// console.log(findStudentByFirstName("elie"));
+
+// //////////////////////////////////////////
+
+// /// in this for loop what is the i++ doing ?
+// // and what else can the ++ do/ is used for//
+
+// function findStudentByFirstName(firstName) {
+//   for (let i = 0; i < students.length; i++) {
+//     if (students[i].firstName.toLowerCase() === firstName.toLowerCase()) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// ///////////////////////////////////////////
+// //how do i write the for loop so it gives me every third number in a array of numbers?
+// //used chatgpt tp solve
+// function extractEveryThird(arr5) {
+//   for (let i = 2; i < arr5.length; i += 3) {
+//     let result = [];
+//     result.push(arr5[i]);
+//   }
+// }
+// var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// var extracted = extractEveryThird(array);
+// console.log(extracted); // Output: [3, 6, 9]
+
+// // extractEveryThird([1, 2, 3]);
+// // console.log(extractEveryThird([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+// // console.log(extractEveryThird([1, 2, 3]));
+// /////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+//just want to be clear whats going on in this function
+//mostly the if statement//
+function countLetters(str) {
+  let count = {};
+
+  for (let i = 0; i < str.length; i++) {
+    let letter = str[i];
+
+    if (count[letter]) {
+      count[letter]++;
+    } else {
+      count[letter] = 1;
+    }
+  }
+  return count;
+}
+
+// multipleLetterCount("hello");
+// multipleLetterCount("hello");
+// console.log(multipleLetterCount("hello"));
+let inputString = "hellossss";
+let letterCounts = countLetters(inputString);
+console.log(letterCounts); // Output: { h: 1, e: 1, l: 2, o: 1 }
+/////////////////////////////////////
+//cant get this to  work
+/// last question function excersise
+function isPalindrome(str) {
+  let modify = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+  let changed1 = modify.split("").reverse().join("");
+
+  return modify === changed1;
+}
+isPalindrome("testing");
+console.log(isPalindrome("testing"));
+console.log(isPalindrome("tacocat"));
+console.log(isPalindrome("testing"));
+console.log(isPalindrome("hannah"));
+/////////////////////////
