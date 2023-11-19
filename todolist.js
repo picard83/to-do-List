@@ -8,14 +8,26 @@ const btn = document.querySelector(".btn");
 const list = document.querySelector(".ollist");
 
 let storage = [];
-
+console.log("hi");
 btn.addEventListener("click", function () {
   let newElement = document.createElement("li");
   // newElement.innerText = `${toDoItem.innerHTML}`;
   newElement.innerHTML =
-    '<input type="checkbox" class="check" />' + toDoItem.value;
+    '<input type="checkbox" class="check" /> ' +
+    toDoItem.value +
+    "<button type='button' class='kill'>delete</button>";
   // newElement.innerText = toDoItem.value;
   list.append(newElement);
+  ///// delete button ////
+  let deleteBtns = document.querySelectorAll(".kill");
+
+  deleteBtns.forEach(function (deleteBtn) {
+    deleteBtn.addEventListener("click", function () {
+      let newElement = deleteBtn.parentNode;
+      newElement.remove();
+    });
+    ///end of delete button///////
+  });
 
   const allCheckBox = document.querySelectorAll(".check");
 
@@ -26,18 +38,5 @@ btn.addEventListener("click", function () {
     });
   }
 
-  storage.push(newElement.textContent);
-
-  // console.log(newElement.innerText);
-  // console.log(storage);
+  localStorage.setItem("local", storage);
 });
-
-function localStorageFunction(storage) {
-  for (let i = 0; i < storage.length; i++) {
-    localStorage.setItem("local", storage);
-  }
-
-  console.log(storage);
-}
-localStorageFunction();
-console.log(localStorage);
