@@ -1,0 +1,48 @@
+.card {
+  height: 250px;
+  width: 150px;
+  background-color: rgb(218, 94, 246);
+  margin: 8px 8px 8px 8px;
+  text-decoration: underline;
+  box-shadow: 1px 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.enlarged {
+  height: 250px;
+  width: 150px;
+}
+.container {
+  border: solid 2px rgb(15, 16, 15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+/* 
+#card1,
+#card4 {
+  background: url(basketball.jpg);
+  background-size: cover;
+}
+
+#card2,
+#card5 {
+  background: url(football.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#card3,
+#card8 {
+  background: url(cricket.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#card6,
+#card7 {
+  background: url(tenis.jpg);
+  background-size: cover;
+  background-position: center center;
+} */

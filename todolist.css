@@ -41,8 +41,8 @@ legend {
 }
 legend {
   color: rgb(11, 11, 97);
-  text-decoration: underline;
-  margin-bottom: 2px;
+  /* text-decoration: underline; */
+  margin-bottom: 5px;
   padding: 2px;
 }
 .todoitem {
@@ -54,4 +54,9 @@ legend {
 
 .checked {
   text-decoration: line-through;
+  color: red;
+}
+
+.clearBtn {
+  background-color: lightblue;
 }
