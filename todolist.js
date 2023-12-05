@@ -17,7 +17,7 @@ btn.addEventListener("click", function (e) {
 
   toDoItem.value = " ";
   showItems();
-  checkedIt();
+  // checkedIt();
 });
 //end of ADD ITEM BTN LISTENER//////////////////////
 
@@ -27,8 +27,9 @@ function showItems() {
 
   for (let i = 0; i < items.length; i++) {
     let newElement = document.createElement("li");
+    // newElement.className = "checked";
     newElement.innerHTML = `
-      <input type="checkbox" class="check" />  
+      <input type="checkbox" class="check "  />  
       ${items[i]}
       <button type='button' id='${i}' class='kill'>delete</button>`;
     list.append(newElement);
