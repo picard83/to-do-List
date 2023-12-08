@@ -19,30 +19,45 @@
   text-align: center;
   min-height: 100vh;
 }
-/* 
-#card1,
-#card4 {
+
+/* CARDS 1 & 4 */
+.hidden {
   background: url(basketball.jpg);
   background-size: cover;
+  height: 250px;
+  width: 150px;
+  margin: 8px 8px 8px 8px;
+  text-decoration: underline;
+  box-shadow: 1px 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#card2,
-#card5 {
+/* CARDS 2 & 5 */
+.hidden2 {
   background: url(football.jpg);
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
+  height: 250px;
+  width: 150px;
+  margin: 8px 8px 8px 8px;
+  text-decoration: underline;
+  box-shadow: 1px 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#card3,
-#card8 {
+/* CARDS 3 & 8 */
+.hidden3 {
   background: url(cricket.jpg);
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
+  height: 250px;
+  width: 150px;
+  margin: 8px 8px 8px 8px;
+  text-decoration: underline;
+  box-shadow: 1px 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#card6,
-#card7 {
+/* CARDS 6 & 7  */
+.hidden4 {
   background: url(tenis.jpg);
   background-size: cover;
   background-position: center center;
-} */
+}
