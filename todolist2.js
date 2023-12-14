@@ -64,6 +64,10 @@ btn.addEventListener("click", function (e) {
   showItems();
 });
 
+function checkedIt() {
+  const allCheckBox = document.querySelectorAll(".check");
+}
+
 // init
 
 showItems();
